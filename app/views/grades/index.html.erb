@@ -1,0 +1,19 @@
+<h1>Your Grades</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Subject</th>
+      <th>Score</th>
+      <th>Teacher</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @grades.each do |grade| %>
+      <tr>
+        <td><%= grade.subject.name %></td>
+        <td><%= grade.score %></td>
+        <td><%= grade.teacher.name %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

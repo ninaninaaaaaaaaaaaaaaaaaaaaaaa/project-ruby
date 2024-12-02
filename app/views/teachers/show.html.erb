@@ -1,0 +1,7 @@
+<h1>Teacher: <%= @teacher.name %></h1>
+<h2>Grades Given:</h2>
+<ul>
+  <% @grades.each do |grade| %>
+    <li><strong>Student:</strong> <%= grade.student.name %> | <strong>Score:</strong> <%= grade.score %></li>
+  <% end %>
+</ul>

@@ -1,0 +1,10 @@
+<h1>Edit Grade</h1>
+<%= form_with(model: @grade, local: true) do |form| %>
+  <div>
+    <%= form.label :score %>
+    <%= form.number_field :score %>
+  </div>
+  <div>
+    <%= form.submit "Save" %>
+  </div>
+<% end %>

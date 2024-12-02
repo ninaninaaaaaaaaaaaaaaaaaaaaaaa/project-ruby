@@ -1,0 +1,7 @@
+<h1>Group: <%= @group.name %></h1>
+<h2>Students:</h2>
+<ul>
+  <% @students.each do |student| %>
+    <li><%= link_to student.name, student_path(student) %></li>
+  <% end %>
+</ul>
